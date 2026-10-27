@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Midtrack "seek signal" palette — teal tonal system, light theme.
+         On Android 12+ these roles are overridden by Material You wallpaper
+         colors (DynamicColors), so they only show on API 26-30 devices.
+         Dark equivalents live in values-night/colors.xml. -->
+
+    <color name="ss_primary">#FF00696E</color>
+    <color name="ss_on_primary">#FFFFFFFF</color>
+    <color name="ss_primary_container">#FF9CF1F6</color>
+    <color name="ss_on_primary_container">#FF002021</color>
+
+    <color name="ss_secondary">#FF4A6365</color>
+    <color name="ss_on_secondary">#FFFFFFFF</color>
+    <color name="ss_secondary_container">#FFCCE8EA</color>
+    <color name="ss_on_secondary_container">#FF052023</color>
+
+    <color name="ss_tertiary">#FF4B607C</color>
+    <color name="ss_on_tertiary">#FFFFFFFF</color>
+    <color name="ss_tertiary_container">#FFD3E4FF</color>
+    <color name="ss_on_tertiary_container">#FF051C34</color>
+
+    <color name="ss_error">#FFBA1A1A</color>
+    <color name="ss_on_error">#FFFFFFFF</color>
+    <color name="ss_error_container">#FFFFDAD6</color>
+    <color name="ss_on_error_container">#FF410002</color>
+
+    <color name="ss_background">#FFF5FAFA</color>
+    <color name="ss_on_background">#FF191C1C</color>
+    <color name="ss_surface">#FFF5FAFA</color>
+    <color name="ss_on_surface">#FF191C1C</color>
+    <color name="ss_surface_variant">#FFDAE4E5</color>
+    <color name="ss_on_surface_variant">#FF3F4849</color>
+    <color name="ss_outline">#FF6F7979</color>
+    <color name="ss_outline_variant">#FFBEC8C9</color>
+
+    <!-- Tonal elevation scale (Material 3 container roles) -->
+    <color name="ss_surface_container_lowest">#FFFFFFFF</color>
+    <color name="ss_surface_container_low">#FFF0F5F5</color>
+    <color name="ss_surface_container">#FFEAEFEF</color>
+    <color name="ss_surface_container_high">#FFE4E9E9</color>
+    <color name="ss_surface_container_highest">#FFDEE3E4</color>
+
+    <!-- Status semantics (readable on the primary-container hero card) -->
+    <color name="status_on">#FF2E7D32</color>
+    <color name="status_off">#FF6E6E6E</color>
+    <color name="status_warning">#FFE65100</color>
+
+    <!-- Launcher icon background (the play mark is white on top of this) -->
+    <color name="ic_launcher_background">#FF00696E</color>
+</resources>

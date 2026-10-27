@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Midtrack</string>
+    <string name="tile_label">Midtrack</string>
+    <string name="header_tagline">Skip to the good part — automatically</string>
+    <string name="battery_settings">Open battery settings</string>
+    <string name="apps_title">Apps</string>
+    <string name="advanced_title">Advanced settings</string>
+    <string name="advanced_summary">Guardrails, notification and battery</string>
+    <string name="advanced_setup_checklist">Setup checklist</string>
+    <string name="manage_app_rules">Manage app rules</string>
+    <string name="choose_apps">Choose apps</string>
+    <string name="selected_apps">Selected apps</string>
+
+    <!-- Setup checklist -->
+    <string name="setup_title">Set up Midtrack</string>
+    <string name="setup_intro">Three quick steps, then Midtrack is ready to jump. You can change any of this later in Advanced settings.</string>
+    <string name="setup_access_title">Notification access</string>
+    <string name="setup_access_granted">Granted</string>
+    <string name="setup_access_needed">Not granted</string>
+    <string name="setup_access_enable">Enable access</string>
+    <string name="setup_access_manage">Manage access</string>
+    <string name="setup_notifications_title">Notifications</string>
+    <string name="setup_notifications_granted">Allowed</string>
+    <string name="setup_notifications_needed">Not allowed</string>
+    <string name="setup_notifications_allow">Allow notifications</string>
+    <string name="setup_notifications_manage">Notification settings</string>
+    <string name="setup_battery_title">Background reliability</string>
+    <string name="setup_battery_unrestricted">Unrestricted</string>
+    <string name="setup_battery_optimized">Battery optimization is on</string>
+    <string name="setup_battery_settings">Battery settings</string>
+    <string name="setup_test">Test current song</string>
+    <string name="setup_test_hint">Start a song in your music app, then test the jump.</string>
+    <string name="setup_test_sent">Test jump sent — check your music app.</string>
+    <string name="setup_test_no_access">Enable notification access first.</string>
+    <string name="setup_done">Done</string>
+    <string name="setup_skip">Skip for now</string>
+    <string name="setup_finish_title">Finish setup?</string>
+    <string name="setup_finish_message">Notification access is still off. Midtrack cannot jump until it is granted.</string>
+    <string name="setup_finish_anyway">Finish anyway</string>
+    <string name="setup_stay">Stay</string>
+
+    <!-- Main health card -->
+    <string name="health_setup_title">Finish setting up Midtrack</string>
+    <string name="health_setup_message">Set up notification access, notifications and background reliability.</string>
+    <string name="health_open_setup">Open setup</string>
+    <string name="health_access_title">Notification access is off</string>
+    <string name="health_access_message">Midtrack cannot read the active media session without it.</string>
+    <string name="health_enable_access">Enable access</string>
+    <string name="health_notifications_title">Notifications are off</string>
+    <string name="health_notifications_message">The playback controls and Quick Settings tile won\'t be visible.</string>
+    <string name="health_allow_notifications">Allow notifications</string>
+    <string name="health_notification_settings">Notification settings</string>
+    <string name="health_battery_title">Battery optimization is on</string>
+    <string name="health_battery_message">Android may stop the listener when the screen is off.</string>
+    <string name="health_battery_settings">Open battery settings</string>
+
+    <!-- Apps screen -->
+    <string name="apps_intro">Choose which apps Midtrack may seek in. The sliders give one app a rule of its own.</string>
+    <string name="apps_scope_all">Every app that plays music is seeked.</string>
+    <string name="apps_scope_selected">Only the apps you switch on are seeked.</string>
+    <string name="apps_no_selection">No apps selected yet — switch on at least one app.</string>
+    <string name="apps_show_all">Show all apps</string>
+    <string name="apps_show_all_description">Include every installed app and generic audio handler.</string>
+    <string name="apps_search_hint">Search apps</string>
+    <string name="apps_select_all">Select all</string>
+    <string name="apps_clear_all">Clear all</string>
+    <string name="apps_selected_count">%1$d apps selected</string>
+    <string name="apps_cleared">All apps cleared</string>
+    <string name="apps_no_players">No player apps to select</string>
+    <string name="apps_loading">Loading apps…</string>
+    <string name="apps_empty">No music apps detected yet — play something and it will show up here.</string>
+    <string name="apps_load_failed">Could not load the app list. Try again.</string>
+    <string name="apps_showing">Showing %1$d of %2$d apps — type above to narrow it down</string>
+    <string name="apps_note">Per-app rules apply from the next track, even while a song is playing.</string>
+    <string name="apps_pin">Pin %1$s</string>
+    <string name="apps_unpin">Unpin %1$s</string>
+    <string name="apps_pinned_toast">%1$s pinned</string>
+    <string name="apps_unpinned_toast">%1$s unpinned</string>
+    <string name="apps_default_state">default · %1$s</string>
+    <string name="apps_own_rule_state">own rule · %1$s</string>
+    <string name="apps_playing_now">playing now</string>
+    <string name="apps_not_seeked">not seeked</string>
+    <string name="back">Back</string>
+
+
+    <string name="notification_channel_name">Playback controls</string>
+    <string name="notification_channel_description">Shows the current jump rule and lets you control Midtrack.</string>
+
+    <string name="notification_access_title">Allow notification access?</string>
+    <string name="notification_access_message">Midtrack uses notification access to read the active media session of the app that is playing music — the title, duration and playback position. It needs this to jump to the right spot when a new song starts.\n\nIt never reads, stores or uploads your notifications. Everything stays on this device.</string>
+    <string name="notification_access_continue">Open settings</string>
+    <string name="notification_access_cancel">Not now</string>
+
+    <string name="rule_for_app">Rule for %1$s</string>
+
+    <string name="footer_version">%1$s · v%2$s</string>
+    <string name="privacy_link">Privacy</string>
+    <string name="source_link">Source</string>
+    <string name="privacy_url" translatable="false">https://github.com/xaepudin/midtrack/blob/main/PRIVACY.md</string>
+    <string name="source_url" translatable="false">https://github.com/xaepudin/midtrack</string>
+
+    <!-- Shared labels -->
+    <string name="seconds_suffix">sec</string>
+    <string name="percent_suffix" translatable="false">%</string>
+    <string name="number_value" translatable="false">%1$d</string>
+    <string name="ellipsis" translatable="false">…</string>
+    <string name="middot" translatable="false">·</string>
+
+    <!-- Main screen -->
+    <string name="jump_subtitle">Jump to a spot when a new song starts</string>
+    <string name="jump_mode">Jump mode</string>
+    <string name="mode_time">Time</string>
+    <string name="mode_percent">Percent</string>
+    <string name="mode_random">Random</string>
+    <string name="seconds">Seconds</string>
+    <string name="percent">Percent</string>
+    <string name="min_percent">Min %</string>
+    <string name="max_percent">Max %</string>
+    <string name="random_spot_hint">Random spot anywhere between these percent points</string>
+    <string name="seconds_helper">Seconds into the song — e.g. 60 = 1:00</string>
+    <string name="percent_helper">Percent into the song</string>
+    <string name="all_apps">All apps</string>
+    <string name="only_these">Only these</string>
+    <string name="main_no_apps_hint">Nothing will be seeked yet — choose at least one app.</string>
+    <string name="last_jump">Last jump</string>
+    <string name="no_jumps">No jumps yet — play something!</string>
+
+    <!-- Advanced -->
+    <string name="guardrails">Guardrails</string>
+    <string name="enable_guardrails">Enable guardrails</string>
+    <string name="guardrails_off_hint">Off — songs are seeked without a minimum length or maximum jump.</string>
+    <string name="guardrails_description">Min length skips short tracks, max jump keeps a jump away from the outro. Songs with no known length are never seeked. 0 turns a guardrail off.</string>
+    <string name="min_length">Min length</string>
+    <string name="max_jump">Max jump</string>
+    <string name="behavior">Behavior</string>
+    <string name="always_show_notification">Always show notification</string>
+    <string name="always_show_notification_description">Re-pin it when swiped, so you can control Midtrack from the shade. Turn off to let it be dismissed.</string>
+    <string name="auto_next">Also seek on natural end</string>
+    <string name="auto_next_description">When a song finishes on its own, still jump to the spot.</string>
+    <string name="background_reliability">Background reliability</string>
+    <string name="checking">Checking…</string>
+    <string name="changes_save_automatically">Changes save automatically.</string>
+
+    <!-- Per-app rule editor -->
+    <string name="using_default_settings">Using your default settings</string>
+    <string name="guardrails_off_per_app">Guardrails are off. Turn them on in Advanced settings to edit these limits.</string>
+    <string name="from">From</string>
+    <string name="to">To</string>
+    <string name="use_default_settings">Use default settings</string>
+    <string name="pin_app">Pin app</string>
+    <string name="rule_for_this_app">Rule for this app</string>
+
+
+    <!-- Dynamic UI labels -->
+    <string name="selected_two_apps">%1$s &amp; %2$s</string>
+    <string name="selected_many_apps">%1$d apps</string>
+    <string name="status_enable_access">Enable notification access, then play a song in any music app</string>
+    <string name="status_paused">Paused — Midtrack is off</string>
+    <string name="status_no_apps">No apps selected — nothing will be seeked</string>
+    <string name="status_watching">Watching %1$s · running in the background</string>
+    <string name="status_listening">Listening for media sessions… running in the background</string>
+    <string name="preview_absolute">New song → jump to %1$s</string>
+    <string name="preview_random">New song → random spot between %1$d%% and %2$d%%</string>
+    <string name="preview_relative">New song → jump %1$d%% in</string>
+    <string name="preview_app_prefix">%1$s: </string>
+    <string name="last_jump_format">“%1$s” → %2$s</string>
+    <string name="battery_unrestricted">Unrestricted — Android keeps the listener awake in the background.</string>
+    <string name="battery_optimized_message">Battery optimization can stop the listener while your screen is off. Open battery settings and choose Unrestricted for Midtrack to keep jumps reliable.</string>
+    <string name="app_rule_custom">Custom rule for %1$s</string>
+    <string name="notification_status_off">Off</string>
+    <string name="notification_status_custom">On · %1$s · %2$s only</string>
+    <string name="notification_status_default">On · %1$s%2$s</string>
+    <string name="notification_scope_none"> · no apps</string>
+    <string name="notification_scope_one"> · 1 app</string>
+    <string name="notification_scope_many"> · %1$d apps</string>
+    <string name="notification_now_playing">▶ %1$s</string>
+    <string name="notification_turn_off">Turn off</string>
+    <string name="notification_turn_on">Turn on</string>
+    <string name="notification_mode">Mode: %1$s</string>
+    <string name="notification_jump_now">Jump now</string>
+    <string name="state_on">On</string>
+    <string name="state_off">Off</string>
+    <string name="toast_disabled">Midtrack is off</string>
+    <string name="toast_nothing_playing">Nothing is playing right now</string>
+    <string name="toast_app_not_selected">%1$s is not selected in Apps</string>
+    <string name="toast_nothing_to_jump">Nothing to jump to</string>
+    <string name="song_fallback">song</string>
+
+</resources>

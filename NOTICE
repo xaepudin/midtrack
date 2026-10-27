@@ -1,0 +1,75 @@
+Midtrack — copyright and attribution notice
+==============================================
+
+This application is Midtrack.
+
+Product
+-------
+  Name:        Midtrack
+  Source:      https://github.com/xaepudin/midtrack
+  Copyright:   Copyright (C) 2026 Asep Saepudin
+  License:     GNU General Public License, version 3 (see LICENSE)
+
+  Midtrack is an independent Android utility. It is not affiliated with,
+  endorsed by, or sponsored by Google, YouTube, YouTube Music, Spotify or any
+  other music service. Product names are used only to describe compatibility.
+
+Third-party components
+----------------------
+  AndroidX libraries
+      Copyright (C) The Android Open Source Project
+      License: Apache License 2.0
+      https://developer.android.com/jetpack/androidx
+
+  Material Components for Android
+      Copyright (C) Google LLC
+      License: Apache License 2.0
+      https://github.com/material-components/material-components-android
+
+  Material Icons
+      Copyright (C) Google LLC
+      License: Apache License 2.0
+      Some in-app UI glyphs (apps, timer, percent, shuffle, bell, search,
+      warning, history and the notification action icons) are Material Icons.
+      https://fonts.google.com/icons
+
+  Kotlin standard library
+      Copyright (C) JetBrains s.r.o. and Kotlin Programming Language
+      contributors
+      License: Apache License 2.0
+      https://kotlinlang.org
+
+  JUnit 4
+      Used for unit tests only; not packaged in the APK or AAB.
+      License: Eclipse Public License 1.0
+      https://junit.org/junit4/
+
+  A copy of the Apache License 2.0 is in docs/licenses/Apache-2.0.txt.
+  The GNU General Public License v3.0 is in LICENSE.
+
+Artwork
+-------
+  The Midtrack name, launcher icon, notification icon and feature graphic
+  were created for this project and are distributed under the same GPL-3.0
+  terms as the application. No third-party artwork is bundled.
+
+  The icon is a play head inside a seek ring: a generic mark for "jump to a
+  point in a song", drawn as Android vector drawables.
+
+Privacy
+-------
+  Midtrack has no internet permission and collects no data. See PRIVACY.md.
+
+License
+-------
+  This program is free software: you can redistribute it and/or modify it under
+  the terms of the GNU General Public License as published by the Free Software
+  Foundation, either version 3 of the License, or (at your option) any later
+  version.
+
+  This program is distributed in the hope that it will be useful, but WITHOUT
+  ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS
+  FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.
+
+  You should have received a copy of the GNU General Public License along with
+  this program. If not, see <https://www.gnu.org/licenses/>.

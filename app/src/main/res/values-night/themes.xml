@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Dark variant: same brand roles, dark status-bar icons. -->
+    <style name="Theme.Midtrack" parent="Base.Theme.Midtrack">
+        <item name="android:windowLightStatusBar">false</item>
+    </style>
+</resources>

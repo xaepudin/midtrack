@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Midtrack "seek signal" palette — dark theme overrides. -->
+
+    <color name="ss_primary">#FF80D4D9</color>
+    <color name="ss_on_primary">#FF003739</color>
+    <color name="ss_primary_container">#FF005052</color>
+    <color name="ss_on_primary_container">#FF9CF1F6</color>
+
+    <color name="ss_secondary">#FFB0CCCE</color>
+    <color name="ss_on_secondary">#FF1B3436</color>
+    <color name="ss_secondary_container">#FF324B4D</color>
+    <color name="ss_on_secondary_container">#FFCCE8EA</color>
+
+    <color name="ss_tertiary">#FFB0C9E8</color>
+    <color name="ss_on_tertiary">#FF1B3149</color>
+    <color name="ss_tertiary_container">#FF334860</color>
+    <color name="ss_on_tertiary_container">#FFD3E4FF</color>
+
+    <color name="ss_error">#FFFFB4AB</color>
+    <color name="ss_on_error">#FF690005</color>
+    <color name="ss_error_container">#FF93000A</color>
+    <color name="ss_on_error_container">#FFFFDAD6</color>
+
+    <color name="ss_background">#FF101415</color>
+    <color name="ss_on_background">#FFE0E3E3</color>
+    <color name="ss_surface">#FF101415</color>
+    <color name="ss_on_surface">#FFE0E3E3</color>
+    <color name="ss_surface_variant">#FF3F4849</color>
+    <color name="ss_on_surface_variant">#FFBEC8C9</color>
+    <color name="ss_outline">#FF889293</color>
+    <color name="ss_outline_variant">#FF3F4849</color>
+
+    <!-- Tonal elevation scale (Material 3 container roles) -->
+    <color name="ss_surface_container_lowest">#FF0B0F10</color>
+    <color name="ss_surface_container_low">#FF181C1D</color>
+    <color name="ss_surface_container">#FF1C2021</color>
+    <color name="ss_surface_container_high">#FF262B2B</color>
+    <color name="ss_surface_container_highest">#FF313535</color>
+
+    <!-- Status semantics (readable on the primary-container hero card) -->
+    <color name="status_on">#FF81C995</color>
+    <color name="status_off">#FF9AA0A6</color>
+    <color name="status_warning">#FFFFB74D</color>
+</resources>

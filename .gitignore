@@ -1,0 +1,30 @@
+# Gradle / Android build output
+.gradle/
+build/
+app/build/
+captures/
+.kotlin/
+*.hprof
+
+# Local machine configuration
+local.properties
+keystore.properties
+
+# Signing material: never commit these
+*.jks
+*.keystore
+*.p12
+*.mobileprovision
+
+# IDE
+.idea/
+*.iml
+*.ipr
+*.iws
+.vscode/
+
+# macOS
+.DS_Store
+
+# Local distribution artifacts (built by CI for releases)
+dist/

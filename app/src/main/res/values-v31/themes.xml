@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Android 12+ splash screen: the Midtrack mark on the branded
+         background, instead of a blank window while the activity starts.
+         The system-bar flags repeat the v27 values because this qualifier
+         wins over values-v27 on API 31+. -->
+    <style name="Theme.Midtrack" parent="Base.Theme.Midtrack">
+        <item name="android:windowSplashScreenBackground">@color/ss_background</item>
+        <item name="android:windowSplashScreenAnimatedIcon">@mipmap/ic_launcher</item>
+        <item name="android:windowSplashScreenAnimationDuration">200</item>
+        <item name="android:windowLightStatusBar">true</item>
+        <item name="android:windowLightNavigationBar">true</item>
+    </style>
+</resources>

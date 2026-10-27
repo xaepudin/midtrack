@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- The per-app rule editor, shown inline under its app row: the same jump
+     settings as the global card, but stored for this one package only.
+     Every field writes through on change, so a rule takes effect on the very
+     next track without a restart. -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rulePanel"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingStart="36dp"
+    android:paddingTop="2dp"
+    android:paddingEnd="4dp"
+    android:paddingBottom="14dp">
+
+    <TextView
+        android:id="@+id/ruleState"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/using_default_settings"
+        android:textColor="?attr/colorOnSurfaceVariant"
+        android:textSize="12sp"
+        android:textStyle="bold" />
+
+    <com.google.android.material.button.MaterialButtonToggleGroup
+        android:id="@+id/ruleModeGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        app:selectionRequired="true"
+        app:singleSelection="true">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/rbRuleAbsolute"
+            style="?attr/materialButtonOutlinedStyle"
+            app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.SS.Pill"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/mode_time"
+            android:textSize="12sp"
+            app:autoSizeMaxTextSize="12sp"
+            app:autoSizeMinTextSize="9sp"
+            app:autoSizeStepGranularity="1sp"
+            app:autoSizeTextType="uniform" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/rbRulePercent"
+            style="?attr/materialButtonOutlinedStyle"
+            app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.SS.Pill"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/mode_percent"
+            android:textSize="12sp"
+            app:autoSizeMaxTextSize="12sp"
+            app:autoSizeMinTextSize="9sp"
+            app:autoSizeStepGranularity="1sp"
+            app:autoSizeTextType="uniform" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/rbRuleRandom"
+            style="?attr/materialButtonOutlinedStyle"
+            app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.SS.Pill"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/mode_random"
+            android:textSize="12sp"
+            app:autoSizeMaxTextSize="12sp"
+            app:autoSizeMinTextSize="9sp"
+            app:autoSizeStepGranularity="1sp"
+            app:autoSizeTextType="uniform" />
+    </com.google.android.material.button.MaterialButtonToggleGroup>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/ruleRowAbsolute"
+        style="@style/Widget.Material3.TextInputLayout.OutlinedBox"
+        app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.SS.Field"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:hint="@string/seconds"
+        android:visibility="gone"
+        app:startIconDrawable="@drawable/ic_timer"
+        app:startIconTint="?attr/colorPrimary"
+        app:suffixText="@string/seconds_suffix">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/ruleAbsolute"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:selectAllOnFocus="true" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/ruleRowPercent"
+        style="@style/Widget.Material3.TextInputLayout.OutlinedBox"
+        app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.SS.Field"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:hint="@string/percent_helper"
+        android:visibility="gone"
+        app:startIconDrawable="@drawable/ic_percent"
+        app:startIconTint="?attr/colorPrimary"
+        app:suffixText="@string/percent_suffix">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/rulePercent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:selectAllOnFocus="true" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <LinearLayout
+        android:id="@+id/ruleRowRandom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:baselineAligned="false"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.Material3.TextInputLayout.OutlinedBox"
+            app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.SS.Field"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="6dp"
+            android:layout_weight="1"
+            android:hint="@string/from"
+            app:startIconDrawable="@drawable/ic_shuffle"
+        app:startIconTint="?attr/colorPrimary"
+        app:suffixText="@string/percent_suffix">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/ruleRandomMin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:selectAllOnFocus="true" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.Material3.TextInputLayout.OutlinedBox"
+            app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.SS.Field"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="6dp"
+            android:layout_weight="1"
+            android:hint="@string/to"
+            app:startIconDrawable="@drawable/ic_shuffle"
+        app:startIconTint="?attr/colorPrimary"
+        app:suffixText="@string/percent_suffix">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/ruleRandomMax"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:selectAllOnFocus="true" />
+        </com.google.android.material.textfield.TextInputLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/ruleGuardrailsOff"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/guardrails_off_per_app"
+        android:textColor="?attr/colorOnSurfaceVariant"
+        android:textSize="12sp"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:baselineAligned="false"
+        android:orientation="horizontal">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/ruleMinDurationWrap"
+            style="@style/Widget.Material3.TextInputLayout.OutlinedBox"
+            app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.SS.Field"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="6dp"
+            android:layout_weight="1"
+            android:hint="@string/min_length"
+            app:startIconDrawable="@drawable/ic_timer"
+        app:startIconTint="?attr/colorPrimary"
+        app:suffixText="@string/seconds_suffix">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/ruleMinDuration"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:selectAllOnFocus="true" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/ruleMaxTargetWrap"
+            style="@style/Widget.Material3.TextInputLayout.OutlinedBox"
+            app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.SS.Field"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="6dp"
+            android:layout_weight="1"
+            android:hint="@string/max_jump"
+            app:startIconDrawable="@drawable/ic_percent"
+        app:startIconTint="?attr/colorPrimary"
+        app:suffixText="@string/percent_suffix">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/ruleMaxTarget"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:selectAllOnFocus="true" />
+        </com.google.android.material.textfield.TextInputLayout>
+    </LinearLayout>
+
+    <com.google.android.material.materialswitch.MaterialSwitch
+        android:id="@+id/ruleAutoNext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:text="@string/auto_next"
+        android:textColor="?attr/colorOnSurface"
+        android:textSize="14sp" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnRuleReset"
+        style="@style/Widget.Material3.Button.TextButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:text="@string/use_default_settings"
+        android:visibility="gone" />
+</LinearLayout>

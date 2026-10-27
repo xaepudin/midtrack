@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Midtrack theme: Material 3 Expressive (material 1.14.0) with a
+         teal "seek signal" brand palette. The M3 Expressive DayNight parent
+         gives us dynamic color (Material You) on Android 12+, large dynamic
+         shape tokens and the full container color scale; the explicit roles
+         below are the branded fallback for API 26-30 devices and for colors
+         the palette owns. Light/dark/night variants live in
+         values[-night][-v27]/themes.xml. -->
+
+    <!-- Pill shapes for buttons and pill-like elements -->
+    <style name="ShapeAppearanceOverlay.SS.Pill" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">50%</item>
+    </style>
+
+    <!-- Large expressive corners for text fields -->
+    <style name="ShapeAppearanceOverlay.SS.Field" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">16dp</item>
+    </style>
+
+    <style name="Base.Theme.Midtrack" parent="Theme.Material3Expressive.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/ss_primary</item>
+        <item name="colorOnPrimary">@color/ss_on_primary</item>
+        <item name="colorPrimaryContainer">@color/ss_primary_container</item>
+        <item name="colorOnPrimaryContainer">@color/ss_on_primary_container</item>
+
+        <item name="colorSecondary">@color/ss_secondary</item>
+        <item name="colorOnSecondary">@color/ss_on_secondary</item>
+        <item name="colorSecondaryContainer">@color/ss_secondary_container</item>
+        <item name="colorOnSecondaryContainer">@color/ss_on_secondary_container</item>
+
+        <item name="colorTertiary">@color/ss_tertiary</item>
+        <item name="colorOnTertiary">@color/ss_on_tertiary</item>
+        <item name="colorTertiaryContainer">@color/ss_tertiary_container</item>
+        <item name="colorOnTertiaryContainer">@color/ss_on_tertiary_container</item>
+
+        <item name="colorError">@color/ss_error</item>
+        <item name="colorOnError">@color/ss_on_error</item>
+        <item name="colorErrorContainer">@color/ss_error_container</item>
+        <item name="colorOnErrorContainer">@color/ss_on_error_container</item>
+
+        <item name="android:colorBackground">@color/ss_background</item>
+        <item name="colorOnBackground">@color/ss_on_background</item>
+        <item name="colorSurface">@color/ss_surface</item>
+        <item name="colorOnSurface">@color/ss_on_surface</item>
+        <item name="colorSurfaceVariant">@color/ss_surface_variant</item>
+        <item name="colorOnSurfaceVariant">@color/ss_on_surface_variant</item>
+        <item name="colorOutline">@color/ss_outline</item>
+        <item name="colorOutlineVariant">@color/ss_outline_variant</item>
+
+        <!-- Tonal elevation scale -->
+        <item name="colorSurfaceContainerLowest">@color/ss_surface_container_lowest</item>
+        <item name="colorSurfaceContainerLow">@color/ss_surface_container_low</item>
+        <item name="colorSurfaceContainer">@color/ss_surface_container</item>
+        <item name="colorSurfaceContainerHigh">@color/ss_surface_container_high</item>
+        <item name="colorSurfaceContainerHighest">@color/ss_surface_container_highest</item>
+
+        <item name="android:windowBackground">@color/ss_background</item>
+        <!-- System bars: opaque + themed on API <35; ignored (edge-to-edge
+             enforced) on Android 15+. -->
+        <item name="android:statusBarColor">@color/ss_background</item>
+        <item name="android:navigationBarColor">@color/ss_background</item>
+        <item name="android:windowLightStatusBar">true</item>
+    </style>
+
+    <style name="Theme.Midtrack" parent="Base.Theme.Midtrack" />
+</resources>
