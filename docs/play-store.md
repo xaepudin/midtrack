@@ -52,10 +52,15 @@ First public release. Midtrack is a player-neutral rewrite with a new identity, 
 | --- | --- | --- |
 | App icon | `docs/play-store/icon-512.png` | 512 × 512 PNG, 32-bit |
 | Feature graphic | `docs/play-store/feature-graphic.png` | 1024 × 500 PNG/JPEG |
-Phone screenshots are not checked in after the Midtrack rebrand. Capture 2–8
-screenshots from the final build before submitting to Play: the main screen, the
-selected-apps summary under **Only these**, Advanced settings, and optionally the
-setup checklist. Use 1080 × 1920 (9:16).
+| Phone screenshot 1 | `docs/play-store/screenshots/phone-setup.png` | 1080 × 1920 (9:16) |
+| Phone screenshot 2 | `docs/play-store/screenshots/phone-main.png` | 1080 × 1920 (9:16) |
+| Phone screenshot 3 | `docs/play-store/screenshots/phone-selected-apps.png` | 1080 × 1920 (9:16) |
+| Phone screenshot 4 | `docs/play-store/screenshots/phone-apps.png` | 1080 × 1920 (9:16) |
+| Phone screenshot 5 | `docs/play-store/screenshots/phone-advanced.png` | 1080 × 1920 (9:16) |
+
+Captured from the Midtrack build on an Android 14 device via adb. The Apps screen
+is included because the default picker only lists real players, so no unrelated
+installed apps appear.
 
 ## Play Console declarations
 
@@ -129,7 +134,7 @@ notification access is an Android special access, explained in-app.
 - [ ] Upload `midtrack-<version>.aab` to Internal testing
 - [ ] Copy the listing text above
 - [ ] Upload icon and feature graphic
-- [ ] Capture and upload 2–8 phone screenshots
+- [ ] Upload the five phone screenshots
 - [ ] Set privacy policy URL
 - [ ] Complete Data safety with "No data collected"
 - [ ] Complete content rating questionnaire

@@ -18,6 +18,12 @@ your phone.
   <img src="docs/play-store/feature-graphic.png" width="600" alt="Midtrack">
 </p>
 
+<p align="center">
+  <img src="docs/play-store/screenshots/phone-main.png" width="250" alt="Midtrack main screen">
+  <img src="docs/play-store/screenshots/phone-selected-apps.png" width="250" alt="Selected apps under Only these">
+  <img src="docs/play-store/screenshots/phone-advanced.png" width="250" alt="Midtrack advanced settings">
+</p>
+
 ## Why
 
 Some songs have a long intro. Some albums put the good part at 0:40, some at
