@@ -21,6 +21,26 @@ Kotlin package directories under `app/src/main/java` and `app/src/test/java`.
 Also update the notification-access command in this document and the download
 URLs in `README.md`, `PRIVACY.md` and `docs/play-store.md`.
 
+## Project layout
+
+```
+app/src/main/java/com/xaepudin/midtrack/
+  MainActivity.kt             master switch, jump mode, app scope, health card
+  SetupActivity.kt            first-run checklist and test jump
+  AppsActivity.kt             app list, whitelist and per-app rules
+  AppListAdapter.kt           RecyclerView rows and inline rule editor
+  AdvancedActivity.kt         guardrails, notification, battery
+  MidtrackService.kt          notification listener + media-session watcher
+  SeekLogic.kt                target maths and guardrails (pure Kotlin)
+  AppRules.kt, AppScope.kt    per-app rules and whitelist (pure Kotlin)
+  Permissions.kt              notification access + runtime permission
+  DeviceSettings.kt           battery-optimization state and settings
+  Prefs.kt, Notifications.kt  storage, notification, tile
+  SeekTileService.kt          Quick Settings tile
+app/src/test/                 unit tests for the pure logic
+docs/                         development, architecture, release, Play listing
+```
+
 ## Requirements
 
 - JDK 17 or newer. JDK 21 is what CI and the release builds use.
@@ -147,3 +167,17 @@ reported duration (live streams, ads, some players) is never seeked by design.
   why. "Nothing happened" is a bug.
 - Release builds run R8. Keep manifest components and anything reached only by
   reflection documented in `app/proguard-rules.pro`.
+
+## Contributing
+
+Bug reports and pull requests are welcome at
+[github.com/xaepudin/midtrack](https://github.com/xaepudin/midtrack).
+
+Before opening a pull request:
+
+```bash
+./gradlew testDebugUnitTest lintDebug
+```
+
+The app is deliberately small and English-only. Features that do not serve the
+one job — seeking to a spot in a song — are out of scope.
